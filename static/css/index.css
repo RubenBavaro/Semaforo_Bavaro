@@ -1,0 +1,20 @@
+@import "commons.css";
+
+#guess{
+    width: 350px;
+    background-color: pink;
+}
+#title{
+    padding-top: 5%;
+    padding-bottom: 30px;
+    color: blue;
+    text-align: center;
+    text-shadow: yellow;
+
+}
+
+.desc{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
