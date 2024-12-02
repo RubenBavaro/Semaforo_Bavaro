@@ -8,37 +8,84 @@
     <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>  
-    <div id="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1 offset-md-0">
-                        <a href="https://www.panettipitagora.edu.it/" class="logo"> <img src="static/img/panetti.png" alt=""> </a>
-                        <a href="https://www.formula1.com/" class="logo"> <img src="static/img/formula-1.png" alt=""> </a>
-                    </div>
-                    <div class="col-md-6 offset-md-3">
-                        <div class="title">
-                                TESTA I TUOI RIFLESSI
+    <div id="hero">   
+        <div class="d-flex flex-column justify-content-between mb-3">
+            <a href="https://www.panettipitagora.edu.it/" class="left1"><img src="static/img/panetti.png" alt="Panetti Logo"></a> 
+            <a href="https://www.formula1.com/" class="left2"><img src="static/img/formula-1.png" alt="Formula 1 Logo"></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="title">
+                        TESTA I TUOI RIFLESSI
                     </div>
                 </div>
-
-            
-            <div class="col-md-8 offset-md-2">
-                <div class="instructions">
-                    Il seguente sito ha la capacità di simulare l’accensione di un semaforo di formula uno. L’utente deve cliccare il bottone START appena il semaforo diventa verde. Mostra "Partenza anticipata!" se l'utente clicca prima del verde; altrimenti, mostra il tempo di reazione in frazioni di secondo. 
+                <div class="col-md-8 offset-md-2">
+                    <div class="instructions">
+                        Il seguente sito ha la capacità di simulare l’accensione di un semaforo di Formula Uno. L’utente deve cliccare il bottone START appena il semaforo diventa verde. Mostra "Partenza anticipata!" se l'utente clicca prima del verde; altrimenti, mostra il tempo di reazione in frazioni di secondo. 
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2 offset-md-5">
-                <form actions="" method="get">
-                    <input type="button" name="btn" id="button" value="START">
-                </form>
-            </div>
+                <div class="col-md-2 offset-md-5">
+                    <form action="" method="get">
+                        <input type="button" name="btn" id="button" value="START">
+                    </form>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <div id="message">
+                        Non hai ancora premuto il tasto START.
+                    </div>
+                </div> <div class="col-md-2 offset-md-1"></div>
+    
+                <div class="col-md-2 offset-md-1">
+                    <div class="rectangle">
+                        <div class="circle transition" id="red1"></div>
+                        <div class="circle transition" id="red2"></div>
+                        <div class="circle transition" id="red3"></div>
+                        <div class="circle4" id="green"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-0">
+                    <div class="rectangle">
+                        <div class="circle transition"  id="red1"></div>
+                        <div class="circle transition" id="red2"></div>
+                        <div class="circle transition" id="red3"></div>
+                        <div class="circle4" id="green"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-0">
+                    <div class="rectangle">
+                        <div class="circle transition" id="red1"></div>
+                        <div class="circle transition" id="red2"></div>
+                        <div class="circle transition" id="red3"></div>
+                        <div class="circle4" id="green"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-0">
+                    <div class="rectangle">
+                        <div class="circle transition" id="red1"></div>
+                        <div class="circle transition" id="red2"></div>
+                        <div class="circle transition" id="red3"></div>
+                        <div class="circle4" id="green"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-0">
+                    <div class="rectangle">
+                        <div class="circle transition" id="red1"></div>
+                        <div class="circle transition" id="red2"></div>
+                        <div class="circle transition" id="red3"></div>
+                        <div class="circle4" id="green"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-5">
+                    <form action="" method="get">
+                        <input type="button" name="btn" id="resetBtn" value="RESET">
+                    </form>
+                </div>
 
-        <div class="col-md-4 offset-md-4">
-        <div id="message">
-            Non hai ancora premuto il tasto START.
+            </div>
         </div>
     </div>
-    </div>
-    </div>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
+

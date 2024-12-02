@@ -2,6 +2,7 @@
 @import "instructions.css";
 @import "hero.css";
 @import "button.css";
+@import "semaforo.css";
 
 .title{
     display: flex;
@@ -11,14 +12,32 @@
     font-size: 48px;
     line-height: 85px;
     text-align: center;
-
+    margin-bottom: 30px;
 }
 
-.left{
-    display:inline-flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items:flex-start;
+.left1{
     margin-top: 0px;
 }
 
+.left2{
+    display: flex;
+    margin-top: 0px;
+}
+
+#message{
+    position: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.transition{
+    transition: all 3s;
+}

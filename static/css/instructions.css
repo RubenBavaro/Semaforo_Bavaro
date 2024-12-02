@@ -1,8 +1,9 @@
 .instructions{
     display: flex;
-font-family: 'Kumar One';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
+    font-family: 'Kumar One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
 }
