@@ -1,20 +1,24 @@
 @import "commons.css";
+@import "instructions.css";
+@import "hero.css";
+@import "button.css";
 
-#guess{
-    width: 350px;
-    background-color: pink;
-}
-#title{
-    padding-top: 5%;
-    padding-bottom: 30px;
-    color: blue;
+.title{
+    display: flex;
+    font-family: 'Kumar One';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 85px;
     text-align: center;
-    text-shadow: yellow;
 
 }
 
-.desc{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+.left{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 0px;
 }
 

@@ -7,56 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/index.css">
 </head>
-<body>
-    <section class="hero">
-        <div class="gradient">
-            <div class="centro">
-                <div class="logo">
-                    <img src="static/img/logo.png" alt="">
+<body>  
+    <div id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 offset-md-0">
+                        <a href="https://www.panettipitagora.edu.it/" class="logo"> <img src="static/img/panetti.png" alt=""> </a>
+                        <a href="https://www.formula1.com/" class="logo"> <img src="static/img/formula-1.png" alt=""> </a>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                        <div class="title">
+                                TESTA I TUOI RIFLESSI
+                    </div>
                 </div>
 
-                <div class="options">
-                    <ul>
-                        <li>
-                            Home
-                        </li>
-
-                        <li>
-                            News
-                        </li>
-
-                        <li>
-                            Contatti
-                        </li>
-                    </ul>
-                </div>
-        </div>
-
-            <div class="main">
-                <h1>
-                    <b>This is my wonderful page</b>
-                </h1>
-
-                <div class="sottotitolo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </div>
-
-                <div class="button">
-                    <a><b>Continue</b></a>
+            
+            <div class="col-md-8 offset-md-2">
+                <div class="instructions">
+                    Il seguente sito ha la capacità di simulare l’accensione di un semaforo di formula uno. L’utente deve cliccare il bottone START appena il semaforo diventa verde. Mostra "Partenza anticipata!" se l'utente clicca prima del verde; altrimenti, mostra il tempo di reazione in frazioni di secondo. 
                 </div>
             </div>
-            
-            <div class="social">
-                
-                <img src="static/img/Instagram.png">
-            
-                <img src="static/img/Facebook.png">
-            
-                <img src="static/img/YouTube.png">       
-                
+            <div class="col-md-2 offset-md-5">
+                <form actions="" method="get">
+                    <input type="button" name="btn" id="button" value="START">
+                </form>
             </div>
+
+        <div class="col-md-4 offset-md-4">
+        <div id="message">
+            Non hai ancora premuto il tasto START.
         </div>
-    </section>
+    </div>
+    </div>
+    </div>
 </body>
 </html>

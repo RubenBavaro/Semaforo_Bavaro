@@ -1,0 +1,8 @@
+#hero{
+    width: 100vw;
+    min-height: 100vh; 
+    background-image: url("../img/back.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
