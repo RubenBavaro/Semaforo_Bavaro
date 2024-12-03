@@ -1,29 +1,41 @@
-.rectangle{
-
-height: 566px;
-margin-bottom: 20px;
-border-radius: 30px;
-background: rgba(0, 0, 0, 0.95);
-padding-top: 22px;  
-padding-left: 40px;
-display: flex;
-flex-direction: column; 
-align-items: flex-start;
-
+.rectangle {
+    height: 566px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.95);
+    padding-top: 22px;  
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically */
 }
 
-.circle{
+.circle {
     margin-bottom: 22px;
-    width: 118px;
-    height: 113px;
+    width: 10vw; /* Change width to a percentage of the viewport width */
+    height: 10vw; /* Change height to a percentage of the viewport width */
+    max-width: 118px; /* Set a maximum width */
+    max-height: 113px; /* Set a maximum height */
     border-radius: 50%; 
     background: rgba(217, 217, 217, 0.5);
 }
 
-.circle4{
+.circle4 {
     margin-bottom: 22px;
-    width: 118px;
-    height: 113px;
+    width: 10vw; /* Change width to a percentage of the viewport width */
+    height: 10vw; /* Change height to a percentage of the viewport width */
+    max-width: 118px; /* Set a maximum width */
+    max-height: 113px; /* Set a maximum height */
     border-radius: 50%; 
     background: rgba(217, 217, 217, 0.5);
+}
+
+@media (max-width: 768px) { /* Target devices with a max width of 768px */
+    .rectangle {
+        display: none; /* Hide all rectangles by default */
+    }
+
+    .rectangle:first-of-type { 
+        display: flex; /* Show only the first rectangle */
+    }
 }

@@ -15,17 +15,21 @@ let startBtn = document.getElementById("button");
 let resetBtn = document.getElementById("resetBtn");
 let result = document.getElementById("message");
 
-let greenLightOn = false;
+let greenLightOn;
 let startTime;
+let start = false;
 
 function handleClick(event) {
     let clickTime = Date.now();
-    if (greenLightOn===false) {
+    if (greenLightOn===false && start===true) {
         result.innerText = `Partenza anticipata!`;
-    } else {
+    } else if (start===true){
         let reactionTime = (clickTime - startTime) / 1000;
         result.innerText = `Tempo di reazione: ${reactionTime.toFixed(3)} secondi`;
         startBtn.disabled = true;
+    }
+    if (start===false){
+        startGame();
     }
     document.body.removeEventListener("click", handleClick);
 }
@@ -45,8 +49,9 @@ startBtn.addEventListener("click", handleClick);
 resetBtn.addEventListener("click", handleReset);
 
 function startGame() {
-    result.innerText = "Non hai ancora premuto il tasto START.";
+    result.innerText = "Non hai ancora premuto il tasto STOP.";
     greenLightOn = false;
+    start = true;
 
     let red1Time = generateRandomInteger(500, 1500);
     let red2Time = generateRandomInteger(500, 1500);
@@ -73,4 +78,4 @@ function startGame() {
     }, red1Time);
 }
 
-startGame();
+
