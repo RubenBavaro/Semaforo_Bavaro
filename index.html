@@ -25,12 +25,12 @@
                         Il seguente sito ha la capacità di simulare l’accensione di un semaforo di Formula Uno. L’utente deve cliccare il bottone START appena il semaforo diventa verde. Mostra "Partenza anticipata!" se l'utente clicca prima del verde; altrimenti, mostra il tempo di reazione in frazioni di secondo. 
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-5">
+                <div class="col-md-2 offset-md-3">
                     <form action="" method="get">
                         <input type="button" name="btn" id="button" value="START/STOP">
                     </form>
                 </div>
-                <div class="col-md-4 offset-md-4 d-flex justify-content-center">
+                <div class="col-md-4 offset-md-0">
                     <div id="message" class="text-center">
                         Non hai ancora premuto il tasto START.
                     </div>
@@ -38,6 +38,7 @@
     
                 <div class="col-md-2 offset-md-1">
                     <div class="rectangle">
+                        <div class="semaforo transition"></div>
                         <div class="circle transition" id="red1"></div>
                         <div class="circle transition" id="red2"></div>
                         <div class="circle transition" id="red3"></div>
